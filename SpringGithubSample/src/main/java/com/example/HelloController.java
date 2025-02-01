@@ -10,5 +10,10 @@ public class HelloController {
 	public String getHello() {
 		return "hello";
 	}
+	
+	@GetMapping("table")
+	public String getTable() {
+		return "table";
+	}
 
 }
