@@ -3,20 +3,17 @@
 <html lang='ja'>
   <head>
     <meta charset='utf-8' />
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>
+    <script th:src="@{/webjars/jquery/jquery.min.js}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth'
-        });
-        calendar.render();
-      });
-
-    </script>
+		<!-- alert("Hello World!");	-->
+	
+		$(function(){
+		 $("#text").css("color", "red");	
+		});
+	</script>
   </head>
   <body>
-    <div id='calendar'></div>
+    <p id="text" > テキスト	テキスト </p>
   </body>
 </html>
