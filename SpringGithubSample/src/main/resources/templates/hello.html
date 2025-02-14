@@ -3,20 +3,17 @@
 <html lang='ja'>
   <head>
     <meta charset='utf-8' />
-    <script th:src="@{/webjars/jquery/jquery.min.js}" defer></script> 
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <!-- <script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js}"></script> -->   
+    <script th:src="@{/js/hello.js}"></script>
+    <!-- <script>$(function(){$("#text").css("color", "red");});</script> --> 
     
-    <script th:src="@{/js/hello.js}" defer></script>
-    
-    <!--
-    <script>	
-		$(function(){
-		 $("#text").css("color", "red");	
-		});		
-	</script>
-	-->
   </head>
   <body>
-    <p id="text" >テキスト</p>
+    <p id="text" th:text="タイムリーフ" ></p>
+    
+    <button>変更</button>
+	<p id="text2">変更前</p>
+    
   </body>
 </html>
